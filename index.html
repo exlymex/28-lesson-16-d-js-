@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="block top-block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis? </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis? </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis? </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis? </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis? </p>
+        </div>
+        <div class="center-block">
+            <input type="button" value='edit' class='btn-edit'>
+            <input type="button" value='style' class='btn-style'>
+        </div>
+        <div class="block bottom-block">
+            <div class="edit-block">
+                <textarea class='edit-area'></textarea>
+                <input type="button" value='add' class='btn-add'>
+                <input type="button" value='save' class='btn-save'>
+            </div>
+            <div class="style-block">
+                <form name='style'>
+                    <div class="form-size">
+                        <h2>Font Size:</h2>
+                        <input type="radio" onclick='fontSize()' name='size' value='12px'><span>12px</span>
+                        <input type="radio" onclick='fontSize()' name='size' value='14px' checked><span>14px</span>
+                        <input type="radio" onclick='fontSize()' name='size' value='16px'><span>16px</span>
+                        <input type="radio" onclick='fontSize()' name='size' value='18px'><span>18px</span>
+                        <input type="radio" onclick='fontSize()' name='size' value='20px'><span>20px</span>
+                    </div>
+                    <div class="font-family">
+                        <h2>Font Family:</h2>
+                        <select id='fontFamily'>
+                            <option value="" selected>Choose option</option>
+                            <option value="cursive">cursive</option>
+                            <option value="monospace">monospace</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="sans-serif">sans-serif</option>
+                        </select>
+                    </div>
+                    <div class="text-color">
+                        <h2>Color</h2>
+                        <input type="button" value='color of text' class='btn-text-color'>
+                        <input type="button" value='background color' class='btn-bg-color'>
+                        <div class="colors hide">
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                        </div>
+                    </div>
+                    <div class='form-style'>
+                        <input type="checkbox" onclick="fontWeight()"><span>Bold text</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper hide">
+        <h2>Choose what you want</h2>
+        <form name="option">
+            <input id="tableChecked" type="radio" name='option' value='table'><span>table</span>
+            <input id="listChecked" type="radio" name='option' value='list'><span>list</span>
+        </form>
+
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>
